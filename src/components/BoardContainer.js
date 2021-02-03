@@ -146,7 +146,8 @@ class BoardContainer extends Component {
       'addLaneTitle',
       'addCardTitle',
       'newLaneTemplate',
-      'newCardTemplate'
+      'newCardTemplate',
+      'shouldLanePaginate',
     ])
 
     return (
@@ -229,7 +230,8 @@ BoardContainer.propTypes = {
   laneDragClass: PropTypes.string,
   addLaneTitle: PropTypes.string,
   addCardTitle: PropTypes.string,
-  newLaneTemplate: PropTypes.node
+  newLaneTemplate: PropTypes.node,
+  shouldLanePaginate: PropTypes.func,
 }
 
 BoardContainer.defaultProps = {
